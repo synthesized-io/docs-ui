@@ -225,7 +225,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .component .title {
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 400;
 }
 
 .nav-panel-explore .versions {
