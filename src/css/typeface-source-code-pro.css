@@ -2,14 +2,12 @@
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src:
-    url("../font/SourceCodePro-Regular.ttf") format("truetype");
+  src: url("../font/SourceCodePro-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 500;
-  src:
-    url("../font/SourceCodePro-Bold.ttf") format("truetype");
+  src: url("../font/SourceCodePro-Bold.ttf") format("truetype");
 }

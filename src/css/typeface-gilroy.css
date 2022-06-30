@@ -2,14 +2,12 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src:
-    url("../font/Gilroy-Regular.ttf") format("truetype");
+  src: url("../font/Gilroy-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  src:
-    url("../font/Gilroy-Bold.ttf") format("truetype");
+  src: url("../font/Gilroy-Bold.ttf") format("truetype");
 }
