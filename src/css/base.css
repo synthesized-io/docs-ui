@@ -148,43 +148,43 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
 }
 
 .badge-primary {
-    color: #fff;
-    background-color: var(--color-synth-blue);
+  color: #fff;
+  background-color: var(--color-synth-blue);
 }
 
 .badge-secondary {
-    color: #fff;
-    background-color: var(--color-gray-70);
+  color: #fff;
+  background-color: var(--color-gray-70);
 }
 
 .badge-success {
-    color: #fff;
-    background-color: var(--tip-color);
+  color: #fff;
+  background-color: var(--tip-color);
 }
 
 .badge-warning {
-    color: #fff;
-    background-color: var(--warning-color);
+  color: #fff;
+  background-color: var(--warning-color);
 }
 
 .badge-danger {
-    color: #fff;
-    background-color: var(--caution-color);
+  color: #fff;
+  background-color: var(--caution-color);
 }
 
 .badge-info {
-    color: #fff;
-    background-color: var(--note-color);
+  color: #fff;
+  background-color: var(--note-color);
 }
