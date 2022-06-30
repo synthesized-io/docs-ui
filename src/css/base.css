@@ -150,7 +150,7 @@ object[type="image/svg+xml"]:not([width]) {
 .label {
   color: rgb(255, 255, 255);
   font-weight: 500;
-  font-family: Gilroy;
+  font-family: Gilroy, sans-serif;
   vertical-align: middle !important;
   display: inline-block !important;
   border-width: 1px;
