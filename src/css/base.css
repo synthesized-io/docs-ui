@@ -157,10 +157,11 @@ object[type="image/svg+xml"]:not([width]) {
   border-style: solid;
   border-radius: 1em;
   font-size: 0.9em;
+  font-weight: normal;
   line-height: 1.2em;
   padding-top: 0.15em;
   margin-bottom: 0.3em;
-  padding-left: 0.5em;
+  padding-left: 0.25em;
   padding-right: 0.5em;
   cursor: pointer;
 }
