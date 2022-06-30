@@ -1,6 +1,46 @@
+@font-face {
+  font-family: 'Canela';
+  src: url('Canela-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('SourceCodePro-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Canela, serif;
+  font-weight: 300;
+}
+
+nav h3 {
+  font-family: Gilroy, sans-serif;
+  font-weight: bold;
+}
+
 :root {
   /* colors */
   --color-white: #fff;
+  --color-synth-blue: #130753;
   --color-smoke-10: #fefefe;
   --color-smoke-30: #fafafa;
   --color-smoke-50: #f5f5f5;
@@ -24,9 +64,9 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
+  --body-font-family: "Gilroy", "Roboto", sans-serif;
   --body-font-weight-bold: 500;
-  --monospace-font-family: "Roboto Mono", monospace;
+  --monospace-font-family: "Source Code Pro", "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
   /* base */
   --body-background: var(--color-white);
@@ -36,7 +76,7 @@
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background: var(--color-synth-blue);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-white);
@@ -79,7 +119,7 @@
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-jet-80);
+  --heading-font-color: var(--color-synth-blue);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
