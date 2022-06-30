@@ -23,7 +23,7 @@ Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
 Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
 
-[.badge .badge-primary]`Preview`
+[badge badge-primary]*Preview*
 
 icon:meteor[2x, blue]
 
