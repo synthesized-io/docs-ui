@@ -147,6 +147,39 @@ object[type="image/svg+xml"]:not([width]) {
   }
 }
 
+.label {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-family: Gilroy;
+  vertical-align: middle; !important;
+  display: inline-block !important;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1em;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  padding-top: 0.15em;
+  margin-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+.label-green {
+  background-color: rgb(14, 141, 135);
+  border-color: rgba(2, 23, 22, 0);
+}
+
+.label-red {
+  background-color: rgb(223, 66, 93);
+  border-color: rgba(135, 23, 44, 0);
+}
+
+.label-blue {
+  background-color: rgb(35, 83, 174);
+  border-color: rgba(13, 31, 63, 0);
+}
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -187,4 +220,10 @@ object[type="image/svg+xml"]:not([width]) {
 .badge-info {
   color: #fff;
   background-color: var(--note-color);
+}
+
+.theme-synth {
+  --fa-secondary-opacity: 0.5;
+  --fa-primary-color: rgb(38, 33, 83);
+  --fa-secondary-color: rgb(38, 33, 83);
 }
