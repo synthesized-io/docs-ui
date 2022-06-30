@@ -1,0 +1,63 @@
+---
+name: ci
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+          cache: npm
+      - run: |
+          npm install
+          node_modules/.bin/gulp lint
+  bundle-stable:
+    if: ${{ github.event_name == 'push' }}
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+          cache: npm
+      - run: |
+          npm install
+          node_modules/.bin/gulp bundle
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ui-bundle.zip
+          path: build/ui-bundle.zip
+  bundle-dev:
+    if: ${{ github.event_name != 'push' }}
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 10
+          cache: npm
+      - run: |
+          npm install
+          node_modules/.bin/gulp bundle
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ui-bundle.zip
+          path: build/ui-bundle.zip
+          retention-days: 1
+...
