@@ -365,7 +365,7 @@
 
 .doc .admonitionblock .icon {
   background-repeat: no-repeat;
-  background-position: 0.1em 0em;
+  background-position: 0.1em 0;
   position: absolute;
   top: 0;
   left: 0;

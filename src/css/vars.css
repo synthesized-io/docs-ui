@@ -88,7 +88,7 @@ nav h3 {
   /* admonitions */
   --caution-color: #9e015c;
   --caution-on-color: var(--color-white);
-  --important-color: rgb(255,77,92);
+  --important-color: rgb(255, 77, 92);
   --important-on-color: var(--color-white);
   --note-color: #605c9c;
   --note-on-color: var(--color-white);
