@@ -358,53 +358,92 @@
   word-wrap: anywhere;
 }
 
+.doc .admonitionblock .icon svg {
+  width: 10px;
+  height: 10px;
+}
+
 .doc .admonitionblock .icon {
+  background-repeat: no-repeat;
+  background-position: 0.1em 0em;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  padding: 0 0.5rem;
-  height: 1.25rem;
+  height: 1.5em;
+  padding: 0.25em 1em;
   line-height: 1;
-  font-weight: var(--admonition-label-font-weight);
-  text-transform: uppercase;
-  border-radius: 0.45rem;
-  transform: translate(-0.5rem, -50%);
+  border-radius: 0.45em;
+  transform: translate(-0.5em, -50%);
+}
+
+.doc .admonitionblock .icon::after {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  position: absolute;
+  padding-top: 0.1em;
+  padding-right: 0.1em;
 }
 
 .doc .admonitionblock.caution .icon {
+  width: 6.1em;
+  background-image: url(../img/bells-regular.svg);
   background-color: var(--caution-color);
   color: var(--caution-on-color);
 }
 
+.doc .admonitionblock.caution .icon::after {
+  content: "CAUTION";
+}
+
 .doc .admonitionblock.important .icon {
+  width: 7.1em;
+  background-image: url(../img/gavel-regular.svg);
   background-color: var(--important-color);
   color: var(--important-on-color);
 }
 
+.doc .admonitionblock.important .icon::after {
+  content: "IMPORTANT";
+}
+
 .doc .admonitionblock.note .icon {
+  width: 4.5em;
+  background-image: url(../img/thought-bubble-regular.svg);
   background-color: var(--note-color);
   color: var(--note-on-color);
 }
 
+.doc .admonitionblock.note .icon::after {
+  content: "NOTE";
+}
+
 .doc .admonitionblock.tip .icon {
+  width: 3.5em;
+  background-image: url(../img/stars-regular.svg);
   background-color: var(--tip-color);
   color: var(--tip-on-color);
 }
 
+.doc .admonitionblock.tip .icon::after {
+  content: "TIP";
+}
+
 .doc .admonitionblock.warning .icon {
+  width: 6.4em;
+  background-image: url(../img/triangle-exclamation-regular.svg);
   background-color: var(--warning-color);
   color: var(--warning-on-color);
+}
+
+.doc .admonitionblock.warning .icon::after {
+  content: "WARNING";
 }
 
 .doc .admonitionblock .icon i {
   display: inline-flex;
   align-items: center;
   height: 100%;
-}
-
-.doc .admonitionblock .icon i::after {
-  content: attr(title);
 }
 
 .doc .imageblock,

@@ -86,15 +86,15 @@ nav h3 {
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-40);
   /* admonitions */
-  --caution-color: #a0439c;
+  --caution-color: #9e015c;
   --caution-on-color: var(--color-white);
-  --important-color: #d32f2f;
+  --important-color: rgb(255,77,92);
   --important-on-color: var(--color-white);
-  --note-color: #217ee7;
+  --note-color: #605c9c;
   --note-on-color: var(--color-white);
-  --tip-color: #41af46;
+  --tip-color: var(--color-synth-blue);
   --tip-on-color: var(--color-white);
-  --warning-color: #e18114;
+  --warning-color: #f2a244;
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);
