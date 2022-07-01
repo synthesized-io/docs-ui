@@ -237,6 +237,10 @@ html.is-clipped--nav {
   list-style: none;
 }
 
+.component:first-child .version {
+  display: none;
+}
+
 .nav-panel-explore .component .version {
   margin: 0.375rem 0.375rem 0 0;
 }
