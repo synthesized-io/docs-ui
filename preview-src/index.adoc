@@ -24,6 +24,164 @@ Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
 
 [badge badge-primary]*Preview*
 
+== The tabset-block extension
+
+=== Links to tabs:
+
+* xref:#tabset1_tab-a[]
+** xref:#tabset2_tab-i[]
+** xref:#tabset2_tab-ii[]
+* xref:#tabset1_tab-b[]
+* xref:#tabset1_tab-c[]
+* xref:#tabset1_tab-d[]
+* xref:#tabset1_tab-e[]
+** xref:#tabset3_tab-i[]
+*** xref:#tabset4_tab-alpha[]
+*** xref:#tabset4_tab-beta[]
+** xref:#tabset3_tab-ii[]
+
+Here is a tabset block:
+
+[tabset]
+====
+
+Tab A::
++
+--
+[discrete]
+== A section
+
+With an explanation!
+
+[discrete]
+== A nested tabset
+
+[tabset]
+======
+Tab I::
++
+[openblock]
+------
+This demonstrates that nested tabsets work.
+------
+
+Tab II::
++
+[openblock]
+--------
+Here's a list in a nested tab:
+
+* First importance
+** second importance
+*** third importance
+** Of increasing importance
+* Most important of all!
+--------
+
+======
+
+--
+
+Tab B::
++
+--
+[discrete]
+== A section
+
+With no explanation?
+--
+
+Tab C::
++
+--
+* A multilevel list
+** level 2
+*** level 3
+** level 2
+* level 1
+--
+
+Tab D::
++
+--
+A multilevel description list::
+It's all about descriptions!
+2nd Level:::
+With lots of details!
+3rd Level::::
+And nit-picky micro-details!
+--
+
+Tab E::
++
+--
+[discrete]
+== A nested tabset
+
+[tabset]
+======
+Tab I::
++
+[openblock]
+------
+This demonstrates that nested tabsets work.
+
+[tabset]
+========
+Tab alpha::
++
+[openblock]
+--------
+[discrete]
+== A discreet third level of nesting.
+
+. The first point
+. The second point
+--------
+
+Tab beta::
++
+[openblock]
+--------
+[discrete]
+== Another valorous third level of nesting.
+
+Discretion is the better part of valor.
+--------
+========
+------
+
+Tab II::
++
+[openblock]
+--------
+Here's a list in a nested tab:
+
+* First importance
+** second importance
+*** third importance
+** Of increasing importance
+* Most important of all!
+--------
+======
+--
+====
+
+=== Links to tabs, again:
+
+* xref:#tabset1_tab-a[]
+** xref:#tabset2_tab-i[]
+** xref:#tabset2_tab-ii[]
+* xref:#tabset1_tab-b[]
+* xref:#tabset1_tab-c[]
+* xref:#tabset1_tab-d[]
+* xref:#tabset1_tab-e[]
+** xref:#tabset3_tab-i[]
+*** xref:#tabset4_tab-alpha[]
+*** xref:#tabset4_tab-beta[]
+** xref:#tabset3_tab-ii[]
+
+
 icon:meteor[2x, blue]
 
 [TIP]

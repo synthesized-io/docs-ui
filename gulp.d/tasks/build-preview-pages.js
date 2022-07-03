@@ -1,6 +1,12 @@
 'use strict'
 
-const Asciidoctor = require('@asciidoctor/core')()
+// NOTE remove patch after upgrading from asciidoctor.js to @asciidoctor/core
+Error.call = (self, ...args) => {
+  const err = new Error(...args)
+  return Object.assign(self, { message: err.message, stack: err.stack })
+}
+
+const asciidoctor = require('asciidoctor.js')()
 const fs = require('fs-extra')
 const handlebars = require('handlebars')
 const merge = require('merge-stream')
@@ -31,11 +37,12 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
             const uiModel = { ...baseUiModel }
             uiModel.page = { ...uiModel.page }
             uiModel.siteRootPath = siteRootPath
+            uiModel.siteRootUrl = path.join(siteRootPath, 'index.html')
             uiModel.uiRootPath = path.join(siteRootPath, '_')
             if (file.stem === '404') {
               uiModel.page = { layout: '404', title: 'Page Not Found' }
             } else {
-              const doc = Asciidoctor.load(file.contents, { safe: 'safe', attributes: ASCIIDOC_ATTRIBUTES })
+              const doc = asciidoctor.load(file.contents, { safe: 'safe', attributes: ASCIIDOC_ATTRIBUTES })
               uiModel.page.attributes = Object.entries(doc.getAttributes())
                 .filter(([name, val]) => name.startsWith('page-'))
                 .reduce((accum, [name, val]) => {

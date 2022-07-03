@@ -1,25 +1,35 @@
 {
-  "name": "@antora/ui-default",
-  "description": "An archetype project that produces a UI for creating documentation sites with Antora",
-  "homepage": "https://gitlab.com/antora/antora-ui-default",
+  "name": "@djencks/antora-ui-builder",
+  "version": "0.0.8",
+  "description": "Builder for Antora UI bundles",
+  "homepage": "https://gitlab.com/djencks/antora-ui-builder",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/antora/antora-ui-default.git"
+    "url": "https://gitlab.com/djencks/antora-ui-builder.git"
   },
+  "main": "gulpfile.js",
+  "files": [
+    "gulp.d/**/*.js"
+  ],
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "browserslist": [
     "last 2 versions"
   ],
-  "devDependencies": {
-    "@asciidoctor/core": "~2.2",
-    "@fontsource/roboto": "~4.5",
-    "@fontsource/roboto-mono": "~4.5",
+  "scripts": {
+    "lint": "eslint gulpfile.js gulp.d/**/*.js",
+    "lint-fix": "eslint gulpfile.js gulp.d/**/*.js --fix"
+  },
+  "dependencies": {
+    "@djencks/asciidoctor-tabset-block": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-asciidoctor-tabset-block-v0.0.3.tgz",
+    "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
+    "asciidoctor.js": "1.5.9",
     "autoprefixer": "~9.7",
     "browser-pack-flat": "~3.4",
     "browserify": "~16.5",
+    "camelcase-keys": "^6.2.2",
     "cssnano": "~4.1",
     "eslint": "~6.8",
     "eslint-config-standard": "~14.1",
@@ -35,7 +45,9 @@
     "gulp-eslint": "~6.0",
     "gulp-imagemin": "~6.2",
     "gulp-postcss": "~8.0",
-    "gulp-stylelint": "~13.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-stylelint": "~11.0",
+    "gulp-terser": "^1.2.0",
     "gulp-uglify": "~3.0",
     "gulp-vinyl-zip": "~2.2",
     "handlebars": "~4.7",
@@ -47,10 +59,12 @@
     "postcss-import": "~12.0",
     "postcss-url": "~8.0",
     "prettier-eslint": "~9.0",
+    "readable-stream": "^3.6.0",
     "require-directory": "~2.1",
     "require-from-string": "~2.0",
     "stylelint": "~13.3",
     "stylelint-config-standard": "~20.0",
+    "tippy.js": "^6.3.7",
     "vinyl-buffer": "~1.0",
     "vinyl-fs": "~3.0"
   }

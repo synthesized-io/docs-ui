@@ -1,0 +1,14 @@
+---
+sources:
+  - path: ./
+  - path: '@djencks/tabset-block-ui'
+css:
+  - site.css
+js:
+  - target: site
+    contents: '+([0-9])-*.js'
+  - target: vendor/tippy
+    require: tippy.js/dist/tippy.umd.min.js
+bundle-name: ui
+preview: true
+...
