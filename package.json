@@ -23,11 +23,11 @@
     "lint-fix": "eslint gulpfile.js gulp.d/**/*.js --fix"
   },
   "dependencies": {
-    "@djencks/asciidoctor-tabset-block": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-asciidoctor-tabset-block-v0.0.3.tgz",
     "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
-    "asciinema-player": "^3.0.1",
     "asciidoctor.js": "1.5.9",
+    "asciinema-player": "^3.0.1",
     "autoprefixer": "~9.7",
+    "bootstrap": "^5.2.0-beta1",
     "browser-pack-flat": "~3.4",
     "browserify": "~16.5",
     "camelcase-keys": "^6.2.2",

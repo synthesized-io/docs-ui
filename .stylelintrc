@@ -1,7 +1,11 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
+    "selector-pseudo-element-no-unknown": null,
     "comment-empty-line-before": null,
     "no-descending-specificity": null,
+    "declaration-block-semicolon-space-before": null,
+    "property-no-unknown": null,
+    "no-duplicate-selectors": null
   }
 }
