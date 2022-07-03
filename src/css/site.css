@@ -1,6 +1,4 @@
 @import "asciinema-player.css";
-@import "tabset.css";
-@import "tabset-vars.css";
 @import "typeface-canela.css";
 @import "typeface-gilroy.css";
 @import "typeface-source-code-pro.css";
@@ -14,6 +12,7 @@
 @import "page-versions.css";
 @import "toc.css";
 @import "doc.css";
+@import "tabset.css";
 @import "pagination.css";
 @import "header.css";
 @import "footer.css";
