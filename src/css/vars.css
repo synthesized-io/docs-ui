@@ -21,7 +21,17 @@ nav h3 {
   font-weight: bold;
 }
 
+.card {
+  /* bootstrap */
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+}
+
 :root {
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   /* colors */
   --color-white: #fff;
   --color-synth-blue: #130753;

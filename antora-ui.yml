@@ -9,6 +9,8 @@ js:
     contents: '+([0-9])-*.js'
   - target: vendor/asciinema-player
     require: asciinema-player/dist/bundle/asciinema-player.min.js
+  - target: vendor/bootstrap
+    require: bootstrap/dist/js/bootstrap.bundle.js
   - target: vendor/tippy
     require: tippy.js/dist/tippy.umd.min.js
 bundle-name: ui
