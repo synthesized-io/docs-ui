@@ -83,7 +83,8 @@ const buildTask = createTask({
     workDir,
     destDir,
     config,
-    process.argv.slice(2).some((name) => name.startsWith('preview'))),
+    process.argv.slice(2).some((name) => name.startsWith('preview'))
+  ),
 })
 
 const bundleBuildTask = createTask({

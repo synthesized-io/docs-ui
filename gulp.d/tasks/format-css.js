@@ -8,4 +8,4 @@ module.exports = (files) => (done) =>
     .src(files)
     .pipe(stylelint({ fix: true, reporters: [{ formatter: 'string', console: true }], failAfterError: false }))
     .pipe(vfs.dest((file) => file.base))
-    // .on('error', done)
+// .on('error', done)

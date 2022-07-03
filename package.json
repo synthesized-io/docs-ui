@@ -25,6 +25,7 @@
   "dependencies": {
     "@djencks/asciidoctor-tabset-block": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-asciidoctor-tabset-block-v0.0.3.tgz",
     "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
+    "asciinema-player": "^3.0.1",
     "asciidoctor.js": "1.5.9",
     "autoprefixer": "~9.7",
     "browser-pack-flat": "~3.4",

@@ -34,20 +34,21 @@ module.exports = (srcbase, destbase, config, preview) => () => {
   startPaths.length > 0 || startPaths.push('')
 
   const css = (config.css || ['site.css']).map((p) => `css/${p}`)
-  const js = (config.js || [{ target: 'site', contents: ['+([0-9])-*.js'] }])
-    .map((data) => {
-      if (data.require) {
-        data.contents = require.resolve(data.require, { /*paths*/ })
-      } else if (data.contents) {
-        Array.isArray(data.contents) || (data.contents = [data.contents])
-        data.contents = data.contents.map((glob) => `js/${glob}`)
-      } else {
-        data.contents = [`js/${data.target}/+([0-9])-*.js`]
-      }
-      data.target = `js/${data.target}.js`
-      data.processor = data.processor === 'none' ? through : data.processor === 'terser' ? terser : uglify
-      return data
-    })
+  const js = (config.js || [{ target: 'site', contents: ['+([0-9])-*.js'] }]).map((data) => {
+    if (data.require) {
+      data.contents = require.resolve(data.require, {
+        /*paths*/
+      })
+    } else if (data.contents) {
+      Array.isArray(data.contents) || (data.contents = [data.contents])
+      data.contents = data.contents.map((glob) => `js/${glob}`)
+    } else {
+      data.contents = [`js/${data.target}/+([0-9])-*.js`]
+    }
+    data.target = `js/${data.target}.js`
+    data.processor = data.processor === 'none' ? through : data.processor === 'terser' ? terser : uglify
+    return data
+  })
 
   return merge(
     startPaths.map((startPath) => {
@@ -93,10 +94,12 @@ module.exports = (srcbase, destbase, config, preview) => () => {
       ]
 
       return merge(
-        ...js.map(({ target, contents, processor }) => vfs
-          .src(contents, { ...opts, sourcemaps })
-          .pipe(processor())
-          .pipe(concat(target))),
+        ...js.map(({ target, contents, processor }) =>
+          vfs
+            .src(contents, { ...opts, sourcemaps })
+            .pipe(processor())
+            .pipe(concat(target))
+        ),
         vfs
           .src('js/vendor/*.js', { ...opts, read: false })
           .pipe(
@@ -129,8 +132,7 @@ module.exports = (srcbase, destbase, config, preview) => () => {
           )
           .pipe(buffer())
           .pipe(uglify()),
-        vfs.src(css, { ...opts, sourcemaps })
-          .pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),
+        vfs.src(css, { ...opts, sourcemaps }).pipe(postcss((file) => ({ plugins: postcssPlugins, options: { file } }))),
         vfs.src('font/*.{ttf,woff*(2)}', opts),
         vfs.src('img/**/*.{gif,ico,jpg,png,svg}', opts).pipe(
           preview
@@ -153,11 +155,13 @@ module.exports = (srcbase, destbase, config, preview) => () => {
         vfs.src('helpers/*.js', opts),
         vfs.src('layouts/*.hbs', opts),
         vfs.src('partials/*.hbs', opts),
-        vfs.src('static/**/*', opts).pipe(map((file, enc, next) => {
-          file.path = file.path.slice(0, file.path.length - file.relative.length) +
-            file.relative.slice('/static'.length)
-          next(null, file)
-        }))
+        vfs.src('static/**/*', opts).pipe(
+          map((file, enc, next) => {
+            file.path =
+              file.path.slice(0, file.path.length - file.relative.length) + file.relative.slice('/static'.length)
+            next(null, file)
+          })
+        )
       ).pipe(vfs.dest(dest, { sourcemaps: sourcemaps && '.' }))
     })
   )
