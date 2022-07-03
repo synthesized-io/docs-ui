@@ -3,6 +3,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 10px !important;
 }
 
 .asciinema-player-wrapper .title-bar {
@@ -126,23 +127,39 @@
   font-size: 12px;
 }
 
+.tab-content {
+  box-shadow: none;
+}
+
+.control-bar {
+  visibility: hidden;
+}
+
 .asciinema-terminal {
+  color: #130554 !important;
+  background-color: #f7f7f7 !important;
+  border: 0;
+  border-color: #f7f7f7 !important;
+  border-left-width: 3pt !important;
+  border-right-width: 3pt !important;
+  border-radius: 3pt !important;
+  padding: 4pt !important;
+  border-left-color: gainsboro !important;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  font-size: 10px;
+  font-family: 'Source Code Pro', monospace, 'Powerline Symbols' !important;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   overflow: hidden;
-  padding: 0;
   margin: 0;
   display: block;
   white-space: pre;
-  border: 0;
   word-wrap: normal;
   word-break: normal;
-  border-radius: 0;
   border-style: solid;
   cursor: text;
-  border-width: 0.75em;
-  font-family: Consolas, Menlo, 'Bitstream Vera Sans Mono', monospace, 'Powerline Symbols';
 }
 
 .asciinema-terminal .line {
