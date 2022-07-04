@@ -358,12 +358,12 @@
   word-wrap: anywhere;
 }
 
-.doc .admonitionblock .icon svg {
+.doc .admonitionblock tr > .icon svg {
   width: 10px;
   height: 10px;
 }
 
-.doc .admonitionblock .icon {
+.doc .admonitionblock tr > .icon {
   background-repeat: no-repeat;
   background-position: 0.1em 0;
   position: absolute;
@@ -376,7 +376,7 @@
   transform: translate(-0.5em, -50%);
 }
 
-.doc .admonitionblock .icon::after {
+.doc .admonitionblock tr > .icon::after {
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 12pt;
@@ -385,62 +385,62 @@
   padding-right: 0.1em;
 }
 
-.doc .admonitionblock.caution .icon {
+.doc .admonitionblock.caution tr > .icon {
   width: 6.1em;
   background-image: url(../img/bells-regular.svg);
   background-color: var(--caution-color);
   color: var(--caution-on-color);
 }
 
-.doc .admonitionblock.caution .icon::after {
+.doc .admonitionblock.caution tr > .icon::after {
   content: "CAUTION";
 }
 
-.doc .admonitionblock.important .icon {
+.doc .admonitionblock.important tr > .icon {
   width: 7.1em;
   background-image: url(../img/gavel-regular.svg);
   background-color: var(--important-color);
   color: var(--important-on-color);
 }
 
-.doc .admonitionblock.important .icon::after {
+.doc .admonitionblock.important tr > .icon::after {
   content: "IMPORTANT";
 }
 
-.doc .admonitionblock.note .icon {
+.doc .admonitionblock.note tr > .icon {
   width: 4.5em;
   background-image: url(../img/thought-bubble-regular.svg);
   background-color: var(--note-color);
   color: var(--note-on-color);
 }
 
-.doc .admonitionblock.note .icon::after {
+.doc .admonitionblock.note tr > .icon::after {
   content: "NOTE";
 }
 
-.doc .admonitionblock.tip .icon {
+.doc .admonitionblock.tip tr > .icon {
   width: 3.5em;
   background-image: url(../img/stars-regular.svg);
   background-color: var(--tip-color);
   color: var(--tip-on-color);
 }
 
-.doc .admonitionblock.tip .icon::after {
+.doc .admonitionblock.tip tr > .icon::after {
   content: "TIP";
 }
 
-.doc .admonitionblock.warning .icon {
+.doc .admonitionblock.warning tr > .icon {
   width: 6.4em;
   background-image: url(../img/triangle-exclamation-regular.svg);
   background-color: var(--warning-color);
   color: var(--warning-on-color);
 }
 
-.doc .admonitionblock.warning .icon::after {
+.doc .admonitionblock.warning tr > .icon::after {
   content: "WARNING";
 }
 
-.doc .admonitionblock .icon i {
+.doc .admonitionblock tr > .icon i {
   display: inline-flex;
   align-items: center;
   height: 100%;
