@@ -1,7 +1,7 @@
 .doc {
   color: var(--doc-font-color);
   font-size: var(--doc-font-size);
-  hyphens: auto;
+  hyphens: none;
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
@@ -137,7 +137,7 @@
 .doc p code,
 .doc thead code,
 .doc .colist > table code {
-  color: var(--code-font-color);
+  color: var(--bs-code-color);
   background: var(--code-background);
   border-radius: 0.25em;
   font-size: 0.95em;
@@ -355,6 +355,7 @@
   padding: 1rem 1rem 0.75rem;
   background: var(--admonition-background);
   width: 100%;
+  border: inset;
   word-wrap: anywhere;
 }
 
@@ -372,7 +373,7 @@
   height: 1.5em;
   padding: 0.25em 1em;
   line-height: 1;
-  border-radius: 0.45em;
+  border-radius: 0.2em;
   transform: translate(-0.5em, -50%);
 }
 
@@ -720,8 +721,8 @@
 .doc .exampleblock > .content,
 .doc details.result > .content {
   background: var(--example-background);
-  border: 0.25rem solid var(--example-border-color);
-  border-radius: 0.5rem;
+  border: 1px dashed var(--example-border-color);
+  border-radius: 5px;
   padding: 0.75rem;
 }
 
