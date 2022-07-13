@@ -241,6 +241,14 @@ html.is-clipped--nav {
   display: none;
 }
 
+ul.versions li:first-child {
+  display: none;
+}
+
+ul.versions li.is-latest {
+  display: inline;
+}
+
 .nav-panel-explore .component .version {
   margin: 0.375rem 0.375rem 0 0;
 }
