@@ -240,7 +240,7 @@
 
 .doc table.tableblock,
 .doc table.tableblock > * > tr > * {
-  border: 1px 0px 1px 0px solid var(--table-border-color);
+  border: 1px 0 1px 0 solid var(--table-border-color);
 }
 
 .doc table.grid-all > * > tr > * {
@@ -261,7 +261,7 @@
 }
 
 .doc table.frame-all {
-  border-width: 0px;
+  border-width: 0;
 }
 
 .doc table.frame-ends {
