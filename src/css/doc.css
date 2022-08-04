@@ -244,7 +244,7 @@
 }
 
 .doc table.grid-all > * > tr > * {
-  border-width: 1px;
+  border-width: 1px 0;
 }
 
 .doc table.grid-cols > * > tr > * {
