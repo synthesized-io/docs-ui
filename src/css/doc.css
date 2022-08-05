@@ -769,11 +769,12 @@
 .doc pre.highlight code,
 .doc .listingblock pre:not(.highlight),
 .doc .literalblock pre {
-  background: var(--pre-background);
+  background: #f7f7f7;
   box-shadow: inset 0 0 1.75px var(--pre-border-color);
   display: block;
   overflow-x: auto;
   padding: 0.75rem;
+  border-radius: 0.25rem;
 }
 
 .doc pre.highlight {
@@ -782,9 +783,8 @@
 
 .doc .source-toolbox {
   display: flex;
-  visibility: hidden;
   position: absolute;
-  top: 0.25rem;
+  top: 0.5rem;
   right: 0.5rem;
   color: var(--pre-annotation-font-color);
   font-family: var(--body-font-family);
