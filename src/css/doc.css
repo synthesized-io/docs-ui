@@ -238,6 +238,10 @@
   padding: 0.5rem;
 }
 
+.doc table.tableblock td[colspan="3"] {
+    padding: 0.5rem 0;
+}
+
 .doc table.tableblock,
 .doc table.tableblock > * > tr > * {
   border: 1px 0 1px 0 solid var(--table-border-color);
