@@ -402,7 +402,7 @@
 }
 
 .doc .admonitionblock.important tr > .icon {
-  width: 7.1em;
+  width: 7.5em;
   background-image: url(../img/gavel-regular.svg);
   background-color: var(--important-color);
   color: var(--important-on-color);
@@ -413,7 +413,7 @@
 }
 
 .doc .admonitionblock.note tr > .icon {
-  width: 4.5em;
+  width: 4.7em;
   background-image: url(../img/thought-bubble-regular.svg);
   background-color: var(--note-color);
   color: var(--note-on-color);
@@ -435,7 +435,7 @@
 }
 
 .doc .admonitionblock.warning tr > .icon {
-  width: 6.4em;
+  width: 6.7em;
   background-image: url(../img/triangle-exclamation-regular.svg);
   background-color: var(--warning-color);
   color: var(--warning-on-color);
