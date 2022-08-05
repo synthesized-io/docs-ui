@@ -180,6 +180,11 @@ object[type="image/svg+xml"]:not([width]) {
   border-color: rgba(13, 31, 63, 0);
 }
 
+.label-orange {
+  background-color: rgb(230, 159, 13);
+  border-color: rgba(13, 31, 63, 0);
+}
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
