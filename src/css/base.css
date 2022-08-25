@@ -232,3 +232,7 @@ object[type="image/svg+xml"]:not([width]) {
   --fa-primary-color: rgb(38, 33, 83);
   --fa-secondary-color: rgb(38, 33, 83);
 }
+
+.color-synth {
+  color: var(--color-synth-blue);
+}
