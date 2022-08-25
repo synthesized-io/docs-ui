@@ -231,7 +231,7 @@ object[type="image/svg+xml"]:not([width]) {
   --fa-secondary-opacity: 0.5;
   --fa-primary-color: rgb(38, 33, 83);
   --fa-secondary-color: rgb(38, 33, 83);
-  --fa-border-width:1px;
+  --fa-border-width: 1px;
   --fa-border-color: rgb(147 145 170);
 }
 
