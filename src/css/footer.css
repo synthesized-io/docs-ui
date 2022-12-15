@@ -16,5 +16,5 @@ footer.footer {
 
 #cookiescript_badge {
   right: 10px;
-  left: unset;
+  left: unset !important;
 }
