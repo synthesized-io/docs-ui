@@ -13,3 +13,8 @@ footer.footer {
 .footer a {
   color: var(--footer-link-font-color);
 }
+
+#cookiescript_badge {
+    right: 10px;
+    left: unset;
+}
