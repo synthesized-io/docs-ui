@@ -32,7 +32,7 @@
 }
 
 .doc > h1.page:first-child {
-  font-size: calc(36 / var(--rem-base) * 1rem);
+  font-size: calc(42 / var(--rem-base) * 1rem);
   margin: 1.5rem 0;
 }
 
@@ -67,6 +67,8 @@
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
+  font-size: calc(36 / var(--rem-base) * 1rem);
+
 }
 
 .doc h3:not(.discrete),
@@ -387,16 +389,18 @@
 }
 
 .doc .admonitionblock tr > .icon::after {
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 400;
+  font-family: 'IBMPlexMono-Regular', sans-serif;;
+  font-weight: normal;
   font-size: 12pt;
   position: absolute;
   padding-top: 0.1em;
+  padding-bottom: 0.1em;
   padding-right: 0.1em;
+  letter-spacing: 1px;
 }
 
 .doc .admonitionblock.caution tr > .icon {
-  width: 6.3em;
+  width: 6.5em;
   background-image: url(../img/bells-regular.svg);
   background-color: var(--caution-color);
   color: var(--caution-on-color);
@@ -404,10 +408,11 @@
 
 .doc .admonitionblock.caution tr > .icon::after {
   content: "CAUTION";
+
 }
 
 .doc .admonitionblock.important tr > .icon {
-  width: 7.5em;
+  width: 8em;
   background-image: url(../img/gavel-regular.svg);
   background-color: var(--important-color);
   color: var(--important-on-color);
@@ -429,7 +434,7 @@
 }
 
 .doc .admonitionblock.tip tr > .icon {
-  width: 3.5em;
+  width: 4em;
   background-image: url(../img/stars-regular.svg);
   background-color: var(--tip-color);
   color: var(--tip-on-color);
@@ -440,7 +445,7 @@
 }
 
 .doc .admonitionblock.warning tr > .icon {
-  width: 6.7em;
+  width: 6.6em;
   background-image: url(../img/triangle-exclamation-regular.svg);
   background-color: var(--warning-color);
   color: var(--warning-on-color);
@@ -780,6 +785,7 @@
   overflow-x: auto;
   padding: 0.75rem;
   border-radius: 0.25rem;
+  color: var(--pre-text-color);
 }
 
 .doc pre.highlight {

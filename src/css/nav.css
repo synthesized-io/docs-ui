@@ -68,6 +68,7 @@ html.is-clipped--nav {
   overflow-y: scroll;
   overscroll-behavior: none;
   height: var(--nav-panel-menu-height);
+  border-right: 1px solid var(--color-jet-80);
 }
 
 .nav-panel-menu:not(.is-active) .nav-menu {
@@ -152,7 +153,23 @@ html.is-clipped--nav {
 
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
-  font-weight: var(--body-font-weight-bold);
+  /*font-weight: var(--body-font-weight-bold);
+  padding: 0.25em 1em;
+  font-size: 100%;
+  font-family: 'IBMPlexMono-Regular', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: baseline;
+  border-radius: 25rem;
+  background-color: var(--color-jet-80);
+  display: inline-block;*/
+  color: var(--color-white);
+  background: var(--color-jet-80);
+  padding: 5px;
+  padding-left: 8px;
+  border-radius: 4px;
 }
 
 .nav-panel-explore {
@@ -164,6 +181,8 @@ html.is-clipped--nav {
   right: 0;
   bottom: 0;
   left: 0;
+  border-right: 1px solid var(--color-jet-80);
+
 }
 
 .nav-panel-explore:not(:first-child) {
@@ -255,6 +274,7 @@ ul.versions li.is-latest {
 
 .nav-panel-explore .component .version {
   margin: 0.375rem 0.375rem 0 0;
+  font-family: IBMPlexMono-Regular, sans-serif;
 }
 
 .nav-panel-explore .component .version a {
@@ -264,10 +284,13 @@ ul.versions li.is-latest {
   white-space: nowrap;
   padding: 0.125em 0.25em;
   display: inherit;
+  font-family: IBMPlexMono-Regular, sans-serif;
 }
 
 .nav-panel-explore .component .is-current a {
   border-color: currentColor;
   opacity: 0.9;
   font-weight: var(--body-font-weight-bold);
+  background-color: var(--color-jet-80);
+  color: var(--color-white);
 }
