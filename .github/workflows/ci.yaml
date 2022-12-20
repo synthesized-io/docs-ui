@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - 'main'
+  release:
+    types: [published]
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
@@ -26,7 +28,7 @@ jobs:
           npm install
           node_modules/.bin/gulp lint
   bundle-stable:
-    if: ${{ startsWith(github.ref, 'refs/tags/') }}
+    if: ${{ github.event_name == 'release' }}
     needs: lint
     runs-on: ubuntu-latest
     steps:
