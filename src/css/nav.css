@@ -153,7 +153,7 @@ html.is-clipped--nav {
 
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
-  /*font-weight: var(--body-font-weight-bold);
+  /* font-weight: var(--body-font-weight-bold);
   padding: 0.25em 1em;
   font-size: 100%;
   font-family: 'IBMPlexMono-Regular', sans-serif;
@@ -164,7 +164,7 @@ html.is-clipped--nav {
   vertical-align: baseline;
   border-radius: 25rem;
   background-color: var(--color-jet-80);
-  display: inline-block;*/
+  display: inline-block; */
   color: var(--color-white);
   background: var(--color-jet-80);
   padding: 5px;
@@ -182,7 +182,6 @@ html.is-clipped--nav {
   bottom: 0;
   left: 0;
   border-right: 1px solid var(--color-jet-80);
-
 }
 
 .nav-panel-explore:not(:first-child) {

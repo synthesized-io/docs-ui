@@ -68,7 +68,6 @@
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
   font-size: calc(36 / var(--rem-base) * 1rem);
-
 }
 
 .doc h3:not(.discrete),
@@ -390,7 +389,7 @@
 }
 
 .doc .admonitionblock tr > .icon::after {
-  font-family: 'IBMPlexMono-Regular', sans-serif;;
+  font-family: 'IBMPlexMono-Regular', sans-serif;
   font-weight: normal;
   font-size: 12pt;
   position: absolute;
@@ -410,7 +409,6 @@
 
 .doc .admonitionblock.caution tr > .icon::after {
   content: "CAUTION";
-
 }
 
 .doc .admonitionblock.important tr > .icon {
