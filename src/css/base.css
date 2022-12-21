@@ -231,13 +231,13 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .theme-synth {
-  --fa-secondary-opacity: 0.5;
-  --fa-primary-color: rgb(38, 33, 83);
-  --fa-secondary-color: rgb(38, 33, 83);
+  --fa-primary-opacity: 0.5;
+  --fa-primary-color: var(--color-jet-80);
+  --fa-secondary-color: var(--color-green);
   --fa-border-width: 1px;
-  --fa-border-color: rgb(147 145 170);
+  --fa-border-color: var(--color-green);
 }
 
 .color-synth {
-  color: var(--color-synth-blue);
+  color: var(--color-green);
 }
