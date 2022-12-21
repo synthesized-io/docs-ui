@@ -449,7 +449,7 @@
 
 .doc .admonitionblock.warning tr > .icon {
   width: 6.8em;
-  background-image: url(../img/exclamation-important.svg);
+  background-image: url(../img/triangle-warning.svg);
   background-size: 20px;
   background-color: var(--warning-color);
   color: var(--warning-on-color);
