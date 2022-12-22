@@ -8,16 +8,20 @@
   src: url('../font/IBMPlexMono-Regular.ttf') format('truetype');
 }
 
-h1,
+h1 {
+  font-family: Aeonik-Bold, sans-serif;
+  font-weight: 700;
+}
+
 h2,
 h3 {
-  font-family: IBMPlexSans-Regular, sans-serif;
-  font-weight: normal;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 nav h3 {
-  font-family: IBMPlexSans-Regular, sans-serif;
-  font-weight: normal;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 .card {
