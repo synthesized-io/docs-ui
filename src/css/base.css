@@ -231,7 +231,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .theme-synth {
-  --fa-secondary-opacity: 1.0;
+  --fa-secondary-opacity: 1;
   --fa-primary-color: #15141d;
   --fa-secondary-color: #3af062;
   --fa-border-width: 1px;
