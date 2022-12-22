@@ -232,12 +232,12 @@ object[type="image/svg+xml"]:not([width]) {
 
 .theme-synth {
   --fa-primary-opacity: 0.5;
-  --fa-primary-color: var(--color-jet-80);
-  --fa-secondary-color: var(--color-green);
+  --fa-primary-color: #15141d;
+  --fa-secondary-color: #3af062;
   --fa-border-width: 1px;
-  --fa-border-color: var(--color-green);
+  --fa-border-color: #3af062;
 }
 
 .color-synth {
-  color: var(--color-green);
+  color: #3af062;
 }
