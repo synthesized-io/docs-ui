@@ -64,7 +64,7 @@ nav h3 {
   --body-font-size--desktop: 1em; /* 16px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
+  --body-font-color: var(--color-jet-80);
   --body-font-family: "IBMPlexSans-Regular", sans-serif;
   --body-font-weight-bold: 500;
   --monospace-font-family: "IBMPlexMono-Regular", monospace;
@@ -92,7 +92,7 @@ nav h3 {
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
   --nav-heading-font-color: var(--color-jet-30);
-  --nav-muted-color: var(--color-gray-70);
+  --nav-muted-color: var(--color-gray-40);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
