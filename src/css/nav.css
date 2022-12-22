@@ -117,8 +117,8 @@ html.is-clipped--nav {
 
 .nav-item strong {
   display: block;
-  font-family: IBMPlexSans-Medium, sans-serif;
-  font-weight: 500;
+  font-family: IBMPlexSans-Bold, sans-serif;
+  font-weight: 700;
 }
 
 /* adds some breathing room below a nested list */
