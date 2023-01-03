@@ -182,7 +182,6 @@ html.is-clipped--nav {
   right: 0;
   bottom: 0;
   left: 0;
-  border-right: 1px solid var(--color-jet-80);
 }
 
 .nav-panel-explore:not(:first-child) {
