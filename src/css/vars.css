@@ -8,16 +8,20 @@
   src: url('../font/IBMPlexMono-Regular.ttf') format('truetype');
 }
 
-h1,
+h1 {
+  font-family: Aeonik-Bold, sans-serif;
+  font-weight: 700;
+}
+
 h2,
 h3 {
-  font-family: IBMPlexSans-Regular, sans-serif;
-  font-weight: normal;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 nav h3 {
-  font-family: IBMPlexSans-Regular, sans-serif;
-  font-weight: normal;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 .card {
@@ -35,7 +39,7 @@ nav h3 {
   --color-white: #fff;
   --color-green: #3af062;
   --color-grey: #88869a;
-  --color-chart-blue: #1456ff;
+  --color-chart-blue: #6c757d;
   --color-code-purple: #947bf2;
   --color-code-red: #ff81a1;
   --color-smoke-10: #fefefe;
@@ -60,7 +64,7 @@ nav h3 {
   --body-font-size--desktop: 1em; /* 16px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
+  --body-font-color: var(--color-jet-80);
   --body-font-family: "IBMPlexSans-Regular", sans-serif;
   --body-font-weight-bold: 500;
   --monospace-font-family: "IBMPlexMono-Regular", monospace;
@@ -88,7 +92,7 @@ nav h3 {
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
   --nav-heading-font-color: var(--color-jet-30);
-  --nav-muted-color: var(--color-gray-70);
+  --nav-muted-color: var(--color-gray-40);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */

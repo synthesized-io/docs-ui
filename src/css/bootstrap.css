@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-synth-green: #3af062;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -29,7 +30,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
+  --bs-primary: #3af062;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -37,7 +38,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 58, 240, 98;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -3309,19 +3310,19 @@ fieldset:disabled .btn {
 
 .btn-synth {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #130753;
-  --bs-btn-border-color: #130753;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #180e58;
-  --bs-btn-hover-border-color: #180e58;
+  --bs-btn-bg: #212529;
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-color: #3af062;
+  --bs-btn-hover-bg: #343a40;
+  --bs-btn-hover-border-color: #343a40;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-bg: #3af062;
+  --bs-btn-active-border-color: #3af062;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
 }
 
 .btn-primary {
@@ -7668,7 +7669,7 @@ fieldset:disabled .btn {
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: rgba(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
+  background-color: var(--color-green) !important;
 }
 
 .text-bg-secondary {
@@ -7707,12 +7708,12 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-  color: #0d6efd !important;
+  color: var(--color-green) !important;
 }
 
 .link-primary:hover,
 .link-primary:focus {
-  color: #0a58ca !important;
+  color: var(--color-green) !important;
 }
 
 .link-secondary {
