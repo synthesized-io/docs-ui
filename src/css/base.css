@@ -187,19 +187,22 @@ object[type="image/svg+xml"]:not([width]) {
 
 .badge {
   display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
+  padding: 0.25em 1em;
+  font-size: 100%;
+  font-family: 'IBMPlexMono-Regular', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 25rem;
 }
 
 .badge-primary {
   color: #fff;
-  background-color: var(--color-synth-blue);
+  background-color: var(--color-jet-80);
 }
 
 .badge-secondary {
@@ -228,13 +231,13 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .theme-synth {
-  --fa-secondary-opacity: 0.5;
-  --fa-primary-color: rgb(38, 33, 83);
-  --fa-secondary-color: rgb(38, 33, 83);
+  --fa-secondary-opacity: 1;
+  --fa-primary-color: #15141d;
+  --fa-secondary-color: #3af062;
   --fa-border-width: 1px;
-  --fa-border-color: rgb(147 145 170);
+  --fa-border-color: #3af062;
 }
 
 .color-synth {
-  color: var(--color-synth-blue);
+  color: #3af062;
 }

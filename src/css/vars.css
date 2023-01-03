@@ -1,24 +1,27 @@
 @font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Regular.ttf') format('truetype');
+  font-family: 'IBMPlexSans-Regular';
+  src: url('../font/IBMPlexSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'IBMPlexMono-Regular';
+  src: url('../font/IBMPlexMono-Regular.ttf') format('truetype');
 }
 
-h1,
+h1 {
+  font-family: Aeonik-Bold, sans-serif;
+  font-weight: 700;
+}
+
 h2,
 h3 {
-  font-family: Canela, serif;
-  font-weight: 300;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 nav h3 {
-  font-family: Gilroy, sans-serif;
-  font-weight: bold;
+  font-family: Aeonik-Regular, sans-serif;
+  font-weight: 400;
 }
 
 .card {
@@ -34,9 +37,13 @@ nav h3 {
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   /* colors */
   --color-white: #fff;
-  --color-synth-blue: #130753;
+  --color-green: #3af062;
+  --color-grey: #88869a;
+  --color-chart-blue: #6c757d;
+  --color-code-purple: #947bf2;
+  --color-code-red: #ff81a1;
   --color-smoke-10: #fefefe;
-  --color-smoke-30: #fafafa;
+  --color-smoke-30: #f5f6f6;
   --color-smoke-50: #f5f5f5;
   --color-smoke-70: #f0f0f0;
   --color-smoke-90: #e1e1e1;
@@ -49,7 +56,7 @@ nav h3 {
   --color-jet-30: #424242;
   --color-jet-50: #333;
   --color-jet-70: #222;
-  --color-jet-80: #191919;
+  --color-jet-80: #15141d;
   --color-black: #000;
   /* fonts */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -57,10 +64,10 @@ nav h3 {
   --body-font-size--desktop: 1em; /* 16px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
-  --body-font-family: "Gilroy", sans-serif;
+  --body-font-color: var(--color-jet-80);
+  --body-font-family: "IBMPlexSans-Regular", sans-serif;
   --body-font-weight-bold: 500;
-  --monospace-font-family: "Source Code Pro", monospace;
+  --monospace-font-family: "IBMPlexMono-Regular", monospace;
   --monospace-font-weight-bold: 500;
   /* base */
   --body-background: var(--color-white);
@@ -70,39 +77,39 @@ nav h3 {
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-synth-blue);
-  --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
+  --navbar-background: var(--color-white);
+  --navbar-font-color: var(--color-jet-80);
+  --navbar_hover-background: var(--color-smoke-30);
+  --navbar-button-background: var(--color-green);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--color-white);
   --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-menu_hover-background: var(--color-smoke-30);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
   --nav-heading-font-color: var(--color-jet-30);
-  --nav-muted-color: var(--color-gray-70);
+  --nav-muted-color: var(--color-gray-40);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
+  --toolbar-background: var(--color-white);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--color-gray-70);
   --toolbar-muted-color: var(--color-gray-40);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-40);
   /* admonitions */
-  --caution-color: #9e015c;
+  --caution-color: var(--color-code-purple);
   --caution-on-color: var(--color-white);
-  --important-color: rgb(255, 77, 92);
+  --important-color: var(--color-code-red);
   --important-on-color: var(--color-white);
-  --note-color: #605c9c;
+  --note-color: var(--color-chart-blue);
   --note-on-color: var(--color-white);
-  --tip-color: var(--color-synth-blue);
+  --tip-color: var(--color-jet-80);
   --tip-on-color: var(--color-white);
   --warning-color: #f2a244;
   --warning-on-color: var(--color-white);
@@ -113,11 +120,11 @@ nav h3 {
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-synth-blue);
+  --heading-font-color: var(--color-jet-80);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
+  --link-font-color: var(--color-jet-80);
   --link_hover-font-color: #104d92;
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
@@ -130,15 +137,16 @@ nav h3 {
   --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
   --example-background: var(--color-white);
-  --example-border-color: var(--color-synth-blue);
+  --example-border-color: var(--color-jet-80);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
   --pre-border-color: var(--panel-border-color);
+  --pre-text-color: var(--color-grey);
   --pre-annotation-font-color: var(--color-gray-50);
   --quote-background: var(--panel-background);
-  --quote-border-color: var(--color-gray-70);
-  --quote-font-color: var(--color-gray-70);
+  --quote-border-color: var(--color-gray-40);
+  --quote-font-color: var(--color-gray-40);
   --quote-attribution-font-color: var(--color-gray-40);
   --sidebar-background: var(--color-smoke-90);
   --table-border-color: var(--panel-border-color);
@@ -151,9 +159,9 @@ nav h3 {
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-smoke-90);
-  --footer-font-color: var(--color-gray-70);
-  --footer-link-font-color: var(--color-jet-80);
+  --footer-background: var(--color-jet-80);
+  --footer-font-color: var(--color-gray-50);
+  --footer-link-font-color: var(--color-gray-50);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);

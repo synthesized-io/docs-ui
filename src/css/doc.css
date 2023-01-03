@@ -32,7 +32,7 @@
 }
 
 .doc > h1.page:first-child {
-  font-size: calc(36 / var(--rem-base) * 1rem);
+  font-size: calc(42 / var(--rem-base) * 1rem);
   margin: 1.5rem 0;
 }
 
@@ -67,6 +67,7 @@
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
+  font-size: calc(36 / var(--rem-base) * 1rem);
 }
 
 .doc h3:not(.discrete),
@@ -115,10 +116,11 @@
 
 .doc a {
   color: var(--link-font-color);
+  text-decoration: underline;
 }
 
 .doc a:hover {
-  color: var(--link_hover-font-color);
+  color: var(--color-grey);
 }
 
 .doc a.bare {
@@ -362,9 +364,9 @@
 
 .doc .admonitionblock td.content {
   padding: 1rem 1rem 0.75rem;
+  border: 1px solid var(--color-jet-80);
   background: var(--admonition-background);
   width: 100%;
-  border: inset;
   word-wrap: anywhere;
 }
 
@@ -375,29 +377,32 @@
 
 .doc .admonitionblock tr > .icon {
   background-repeat: no-repeat;
-  background-position: 0.1em 0;
+  background-position: 0.2em 0.12em;
   position: absolute;
   top: 0;
   left: 0;
   height: 1.5em;
   padding: 0.25em 1em;
   line-height: 1;
-  border-radius: 0.2em;
+  border-radius: 2em;
   transform: translate(-0.5em, -50%);
 }
 
 .doc .admonitionblock tr > .icon::after {
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 400;
+  font-family: 'IBMPlexMono-Regular', sans-serif;
+  font-weight: normal;
   font-size: 12pt;
   position: absolute;
-  padding-top: 0.1em;
-  padding-right: 0.1em;
+  padding-top: -0.1em;
+  padding-bottom: 0.1em;
+  padding-right: 1em;
+  letter-spacing: 1px;
 }
 
 .doc .admonitionblock.caution tr > .icon {
-  width: 6.3em;
-  background-image: url(../img/bells-regular.svg);
+  width: 6.8em;
+  background-image: url(../img/hand-caution.svg);
+  background-size: 20px;
   background-color: var(--caution-color);
   color: var(--caution-on-color);
 }
@@ -407,8 +412,9 @@
 }
 
 .doc .admonitionblock.important tr > .icon {
-  width: 7.5em;
-  background-image: url(../img/gavel-regular.svg);
+  width: 8.1em;
+  background-image: url(../img/exclamation-important.svg);
+  background-size: 20px;
   background-color: var(--important-color);
   color: var(--important-on-color);
 }
@@ -418,8 +424,9 @@
 }
 
 .doc .admonitionblock.note tr > .icon {
-  width: 4.7em;
-  background-image: url(../img/thought-bubble-regular.svg);
+  width: 4.8em;
+  background-image: url(../img/note-bubble.svg);
+  background-size: 20px;
   background-color: var(--note-color);
   color: var(--note-on-color);
 }
@@ -429,8 +436,9 @@
 }
 
 .doc .admonitionblock.tip tr > .icon {
-  width: 3.5em;
-  background-image: url(../img/stars-regular.svg);
+  width: 4.1em;
+  background-image: url(../img/tip-bulb.svg);
+  background-size: 20px;
   background-color: var(--tip-color);
   color: var(--tip-on-color);
 }
@@ -440,8 +448,9 @@
 }
 
 .doc .admonitionblock.warning tr > .icon {
-  width: 6.7em;
-  background-image: url(../img/triangle-exclamation-regular.svg);
+  width: 6.8em;
+  background-image: url(../img/triangle-warning.svg);
+  background-size: 20px;
   background-color: var(--warning-color);
   color: var(--warning-on-color);
 }
@@ -780,6 +789,7 @@
   overflow-x: auto;
   padding: 0.75rem;
   border-radius: 0.25rem;
+  color: var(--pre-text-color);
 }
 
 .doc pre.highlight {

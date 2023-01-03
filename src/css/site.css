@@ -1,7 +1,10 @@
 @import "bootstrap.css";
 @import "asciinema-player.css";
+@import "typeface-aeonik.css";
 @import "typeface-canela.css";
 @import "typeface-gilroy.css";
+@import "typeface-ibmplexmono.css";
+@import "typeface-ibmplexsans.css";
 @import "typeface-source-code-pro.css";
 @import "vars.css";
 @import "base.css";

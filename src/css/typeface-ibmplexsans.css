@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "IBMPlexSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/IBMPlexSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/IBMPlexSans-Bold.ttf") format("truetype");
+}
