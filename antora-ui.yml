@@ -1,9 +1,10 @@
 ---
 sources:
-  - path: '@djencks/tabset-block-ui'
   - path: ./
 css:
   - site.css
+  - target: vendor/tabs
+    require: '@asciidoctor/tabs/dist/css/tabs.css'
 js:
   - target: site
     contents: '+([0-9])-*.js'
@@ -13,6 +14,9 @@ js:
     require: bootstrap/dist/js/bootstrap.bundle.js
   - target: vendor/tippy
     require: tippy.js/dist/tippy.umd.min.js
+  - target: vendor/tabs
+    require: '@asciidoctor/tabs/dist/js/tabs.js'
+
 bundle-name: ui
 preview: true
 ...
