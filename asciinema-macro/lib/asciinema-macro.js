@@ -4,7 +4,7 @@ const createDiv = function (target, attrs) {
   const autoplay = attrs.autoplay ? attrs.autoplay : 'true'
   const loop = attrs.loop ? attrs.loop : 'true'
   const asciiDiv = `<div id="${target}" class="openblock"></div>`
-  const props = `{loop: ${loop}, theme: '${theme}', autoplay: ${autoplay}}`
+  const props = `{loop: ${loop}, theme: '${theme}', autoplay: ${autoplay}, controls: false}`
   const asciiScript = `AsciinemaPlayer.create('./_images/${target}.cast', document.getElementById('${target}'), ${props});`
   return `${asciiDiv}<script>${asciiScript}</script>`
 }
