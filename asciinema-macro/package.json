@@ -1,6 +1,6 @@
 {
   "name": "@simonhkswan/asciinema-macro",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Asciidoctor asciinema macro extension",
   "main": "lib/asciinema-macro.js",
   "files": [
@@ -11,7 +11,7 @@
     "lint-fix": "eslint lib/*.js --fix"
   },
   "devDependencies": {
-    "@antora/content-classifier": "^3.0.0-alpha.1",
+    "@antora/content-classifier": "^3.0.3",
     "@asciidoctor/core": "^2.2.0",
     "chai": "~4.2",
     "chai-cheerio": "~1.0",
