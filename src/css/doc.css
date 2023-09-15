@@ -788,7 +788,7 @@
   display: block;
   overflow-x: auto;
   padding: 0.75rem;
-  border-radius: 0.25rem;
+  border-radius: 0 0.25rem 0.25rem 0.25rem;
   color: var(--pre-text-color);
 }
 

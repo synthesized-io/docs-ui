@@ -6,7 +6,7 @@ Error.call = (self, ...args) => {
   return Object.assign(self, { message: err.message, stack: err.stack })
 }
 
-const asciidoctor = require('asciidoctor.js')()
+const Asciidoctor = require('@asciidoctor/core')()
 const fs = require('fs-extra')
 const handlebars = require('handlebars')
 const merge = require('merge-stream')
@@ -27,7 +27,21 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
       merge(compileLayouts(src), registerPartials(src), registerHelpers(src), copyImages(previewSrc, previewDest))
     ),
   ])
-    .then(([baseUiModel, { layouts }]) => [{ ...baseUiModel, env: process.env }, layouts])
+    .then(([baseUiModel, { layouts }]) => {
+      const extensions = ((baseUiModel.asciidoc || {}).extensions || []).map((request) => {
+        ASCIIDOC_ATTRIBUTES[request.replace(/^@|\.js$/, '').replace(/[/]/g, '-') + '-loaded'] = ''
+        const extension = require(request)
+        extension.register(Asciidoctor.Extensions)
+        return extension
+      })
+      const asciidoc = { extensions }
+      for (const component of baseUiModel.site.components) {
+        for (const version of component.versions || []) version.asciidoc = asciidoc
+      }
+      baseUiModel = { ...baseUiModel, env: process.env }
+      delete baseUiModel.asciidoc
+      return [baseUiModel, layouts]
+    })
     .then(([baseUiModel, layouts]) =>
       vfs
         .src('**/*.adoc', { base: previewSrc, cwd: previewSrc })
@@ -42,7 +56,7 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
             if (file.stem === '404') {
               uiModel.page = { layout: '404', title: 'Page Not Found' }
             } else {
-              const doc = asciidoctor.load(file.contents, { safe: 'safe', attributes: ASCIIDOC_ATTRIBUTES })
+              const doc = Asciidoctor.load(file.contents, { safe: 'safe', attributes: ASCIIDOC_ATTRIBUTES })
               uiModel.page.attributes = Object.entries(doc.getAttributes())
                 .filter(([name, val]) => name.startsWith('page-'))
                 .reduce((accum, [name, val]) => {
@@ -110,7 +124,7 @@ function compileLayouts (src) {
 
 function copyImages (src, dest) {
   return vfs
-    .src('**/*.{png,svg}', { base: src, cwd: src })
+    .src('**/*.{png,svg,cast}', { base: src, cwd: src })
     .pipe(vfs.dest(dest))
     .pipe(map((file, enc, next) => next()))
 }

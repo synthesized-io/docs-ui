@@ -1,0 +1,38 @@
+{
+  "name": "@simonhkswan/asciinema-macro",
+  "version": "0.2.0",
+  "description": "Asciidoctor asciinema macro extension",
+  "main": "lib/asciinema-macro.js",
+  "files": [
+    "lib/*.js"
+  ],
+  "scripts": {
+    "lint": "eslint lib/*.js",
+    "lint-fix": "eslint lib/*.js --fix"
+  },
+  "devDependencies": {
+    "@antora/content-classifier": "^3.0.3",
+    "@asciidoctor/core": "^2.2.0",
+    "chai": "~4.2",
+    "chai-cheerio": "~1.0",
+    "chai-fs": "~2.0",
+    "chai-spies": "~1.0",
+    "cheerio": "1.0.0-rc.3",
+    "dirty-chai": "~2.0",
+    "eslint": "~6.7",
+    "eslint-config-standard": "~14.1",
+    "eslint-plugin-import": "~2.19",
+    "eslint-plugin-node": "~10.0",
+    "eslint-plugin-promise": "~4.2",
+    "eslint-plugin-standard": "~4.0",
+    "prettier-eslint-cli": "~5.0"
+  },
+  "keywords": [
+    "asciidoctor",
+    "asciinema",
+    "javascript",
+    "extension"
+  ],
+  "author": "Simon Swan (https://github.com/simonhkswan)",
+  "license": "MIT"
+}

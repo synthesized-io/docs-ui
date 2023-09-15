@@ -23,8 +23,9 @@
     "lint-fix": "eslint gulpfile.js gulp.d/**/*.js --fix"
   },
   "dependencies": {
-    "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
-    "asciidoctor.js": "1.5.9",
+    "@asciidoctor/core": "~2.2",
+    "@simonhkswan/asciinema-macro": "file:asciinema-macro",
+    "@asciidoctor/tabs": "^1.0.0-beta.6",
     "asciinema-player": "^3.0.1",
     "autoprefixer": "~9.7",
     "bootstrap": "^5.2.0-beta1",
@@ -63,7 +64,7 @@
     "readable-stream": "^3.6.0",
     "require-directory": "~2.1",
     "require-from-string": "~2.0",
-    "stylelint": "~13.3",
+    "stylelint": "~12.0",
     "stylelint-config-standard": "~20.0",
     "tippy.js": "^6.3.7",
     "vinyl-buffer": "~1.0",
