@@ -1,6 +1,6 @@
 /*! Asciidoctor Tabs | Copyright (c) 2018-present Dan Allen | MIT License */
 .tabs {
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
 }
 
 .tablist > ul {
@@ -46,22 +46,22 @@
 }
 
 .tabs .tablist li {
-    font-family: IBMPlexMono-Regular,monospace;
-    font-size: 8pt;
+  font-family: IBMPlexMono-Regular, monospace;
+  font-size: 8pt;
 }
 
 /* tabs.css:50 */
 .tabs.is-loading .tablist li:first-child,
 .tabs:not(.is-loading) .tablist li.is-selected {
-    border-bottom: 2px solid #3af062;
-    padding-bottom: 0px;
-    color: #333;
+  border-bottom: 2px solid #3af062;
+  padding-bottom: 0;
+  color: #333;
 }
 
 .tabs.is-loading .tablist li:not(:first-child),
 .tabs:not(.is-loading) .tablist li:not(.is-selected) {
-    padding-bottom: 2px;
-    color: #bbb;
+  padding-bottom: 2px;
+  color: #bbb;
 }
 /*
 .tabs:not(.is-loading) .tablist li,
@@ -77,7 +77,7 @@
 
 .tabpanel {
   background-color: #fff;
-  padding: 0em;
+  padding: 0;
 }
 
 .tablist > ul li,
