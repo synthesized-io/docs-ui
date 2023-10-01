@@ -73,4 +73,3 @@
   })
   window.addEventListener('hashchange', onHashChange, false)
 })()
-
