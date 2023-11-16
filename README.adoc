@@ -46,8 +46,6 @@ Next, make sure that you have Node.js installed (which also provides npm).
 
  $ node --version
 
-If this command fails with an error, you don't have Node.js installed.
-
 An easy way to get started is to use {url-nvm}[nvm] (Node Version Manager) to manage your Node.js installation(s).
 Follow the {url-nvm-install}[nvm installation instructions] to set up nvm on your machine.
 
